@@ -6,9 +6,17 @@
 #    By: msessa <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/14 14:13:08 by msessa            #+#    #+#              #
-#    Updated: 2021/05/19 11:48:10 by msessa           ###   ########.fr        #
+#    Updated: 2021/05/21 11:27:45 by msessa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+MAKEFLAGS	+=	--quiet
+
+WHT	= \033[0;37m
+BLK	= \033[0;30m
+RED	= \033[0;31m
+YEL	= \033[0;33m
+GRN	= \033[0;32m
 
 SRCS	=	ft_memset.c \
 			ft_bzero.c \
@@ -64,8 +72,6 @@ NAME	=	libft.a
 
 DEPS	=	libft.h
 
-BDEPS	:=	$(DEPS) libft.h
-
 CC		=	gcc
 
 CFLAGS	=	-Wall -Wextra -Werror
@@ -74,19 +80,23 @@ RM		=	rm -f
 
 $(NAME):	$(DEPS) $(OBJS)
 			ar rc $(NAME) $(OBJS)
+			printf "$(WHT)[$(GRN)$(NAME) COMPILED$(WHT)]\n"
 
 all:		$(NAME)
 
 clean:
 			$(RM) $(OBJS)
 			$(RM) $(BOBJS)
+			printf "$(WHT)[$(YEL)$(NAME) OBJS REMOVED$(WHT)]\n"
 
 fclean:		clean
 			$(RM) $(NAME)
+			printf "$(WHT)[$(YEL)$(NAME) BINARIES REMOVED$(WHT)]\n"
 
 re:			fclean all
 
-bonus:		$(BDEPS) $(BOBJS)
+bonus:		$(DEPS) $(BOBJS)
 			ar rc $(NAME) $(BOBJS)
+			printf "$(WHT)[$(GRN)$(NAME) BONUS COMPILED$(WHT)]\n"
 
 .PHONY:		all clean fclean re bonus
