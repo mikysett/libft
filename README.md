@@ -5,4 +5,4 @@
 ## Testers used to check the functions
 * [alelievr/libft-unit-test](https://github.com/alelievr/libft-unit-test)
 * [jtoty/Libftest](https://github.com/jtoty/Libftest)
-* [Tripouille/libftTester](https://github.com/Tripouille/libftTester)
+* [Tripouille/libftTester](https://github.com/Tripouille/libftTester) (my favorite)
