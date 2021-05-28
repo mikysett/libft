@@ -6,11 +6,7 @@
 #    By: msessa <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/14 14:13:08 by msessa            #+#    #+#              #
-<<<<<<< HEAD
-#    Updated: 2021/05/28 15:51:16 by msessa           ###   ########.fr        #
-=======
-#    Updated: 2021/05/23 01:26:57 by msessa           ###   ########.fr        #
->>>>>>> 34535a23fef486e48c0ae2d11d68ddceae40ebe4
+#    Updated: 2021/05/28 15:55:07 by msessa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -112,10 +108,4 @@ bonus:		$(DEPS) $(BOBJS)
 			ar rc $(NAME) $(BOBJS)
 			printf "$(WHT)[$(GRN)$(NAME) BONUS COMPILED$(WHT)]\n"
 
-<<<<<<< HEAD
-fastbonus:	CFLAGS += -O3
-
-.PHONY:		all clean fclean re bonus fastbonus
-=======
 .PHONY:		all fastbonus clean fclean re bonus
->>>>>>> 34535a23fef486e48c0ae2d11d68ddceae40ebe4
