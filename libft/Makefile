@@ -6,7 +6,7 @@
 #    By: msessa <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/14 14:13:08 by msessa            #+#    #+#              #
-#    Updated: 2021/05/21 11:27:45 by msessa           ###   ########.fr        #
+#    Updated: 2021/05/23 01:26:57 by msessa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,10 @@ BLK	= \033[0;30m
 RED	= \033[0;31m
 YEL	= \033[0;33m
 GRN	= \033[0;32m
+
+NAME	=	libft.a
+
+FAST	=	
 
 SRCS	=	ft_memset.c \
 			ft_bzero.c \
@@ -68,21 +72,26 @@ OBJS	=	$(SRCS:.c=.o)
 
 BOBJS	=	$(BSRCS:.c=.o)
 
-NAME	=	libft.a
-
 DEPS	=	libft.h
 
 CC		=	gcc
 
-CFLAGS	=	-Wall -Wextra -Werror
+CFLAGS	=	-Wall -Wextra
 
 RM		=	rm -f
+
+%.o: %.c
+			$(CC) $(CFLAGS) $(INCLUDES) -o $@ -c $<
 
 $(NAME):	$(DEPS) $(OBJS)
 			ar rc $(NAME) $(OBJS)
 			printf "$(WHT)[$(GRN)$(NAME) COMPILED$(WHT)]\n"
 
 all:		$(NAME)
+
+fastbonus:		CFLAGS += -O3
+fastbonus:		bonus
+				printf "$(WHT)[$(GRN)$(NAME) --> OPTIMIZATION FLAG ACTIVE (-O3)$(WHT)]\n"
 
 clean:
 			$(RM) $(OBJS)
@@ -99,4 +108,4 @@ bonus:		$(DEPS) $(BOBJS)
 			ar rc $(NAME) $(BOBJS)
 			printf "$(WHT)[$(GRN)$(NAME) BONUS COMPILED$(WHT)]\n"
 
-.PHONY:		all clean fclean re bonus
+.PHONY:		all fastbonus clean fclean re bonus
