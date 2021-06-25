@@ -6,7 +6,7 @@
 #    By: msessa <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/14 14:13:08 by msessa            #+#    #+#              #
-#    Updated: 2021/05/23 01:26:57 by msessa           ###   ########.fr        #
+#    Updated: 2021/06/25 18:27:38 by msessa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,6 +67,7 @@ BSRCS	:=	$(SRCS) \
 			ft_lstclear.c \
 			ft_lstiter.c \
 			ft_lstmap.c \
+			ft_abs.c \
 
 OBJS	=	$(SRCS:.c=.o)
 
