@@ -6,13 +6,13 @@
 /*   By: msessa <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/15 14:03:16 by msessa            #+#    #+#             */
-/*   Updated: 2021/07/07 16:04:38 by msessa           ###   ########.fr       */
+/*   Updated: 2021/07/13 21:44:43 by msessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_free_str_arr(char **str_arr)
+void	ft_free_str_arr(char **str_arr)
 {
 	char	**o_str_arr;
 

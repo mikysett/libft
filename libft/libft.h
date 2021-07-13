@@ -6,7 +6,7 @@
 /*   By: msessa <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 14:33:59 by msessa            #+#    #+#             */
-/*   Updated: 2021/07/07 16:04:50 by msessa           ###   ########.fr       */
+/*   Updated: 2021/07/13 21:44:50 by msessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),
 			void (*del)(void *));
 
 int		ft_abs(int nb);
-int		ft_free_str_arr(char **str_arr);
+void	ft_free_str_arr(char **str_arr);
 
 #endif
