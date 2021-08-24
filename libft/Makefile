@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: msessa <marvin@42.fr>                      +#+  +:+       +#+         #
+#    By: msessa <mikysett@gmail.com>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/14 14:13:08 by msessa            #+#    #+#              #
-#    Updated: 2021/07/07 16:05:10 by msessa           ###   ########.fr        #
+#    Updated: 2021/08/24 11:23:23 by msessa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,8 @@ BSRCS	:=	$(SRCS) \
 			ft_lstiter.c \
 			ft_lstmap.c \
 			ft_abs.c \
-			ft_free_str_arr.c
+			ft_free_str_arr.c \
+			ft_strndup.c
 
 OBJS	=	$(SRCS:.c=.o)
 

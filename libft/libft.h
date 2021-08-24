@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msessa <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: msessa <mikysett@gmail.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 14:33:59 by msessa            #+#    #+#             */
-/*   Updated: 2021/07/13 21:44:50 by msessa           ###   ########.fr       */
+/*   Updated: 2021/08/24 11:22:26 by msessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),
 
 int		ft_abs(int nb);
 void	ft_free_str_arr(char **str_arr);
+char	*ft_strndup(const char *s, size_t n);
 
 #endif
