@@ -6,7 +6,7 @@
 /*   By: msessa <mikysett@gmail.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/16 13:19:55 by msessa            #+#    #+#             */
-/*   Updated: 2021/08/24 11:21:46 by msessa           ###   ########.fr       */
+/*   Updated: 2021/08/24 12:08:50 by msessa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strndup(const char *s, size_t n)
 {
 	char	*new_str;
 	size_t	s_len;
-	int		i;
+	size_t	i;
 
 	s_len = ft_strlen(s);
 	if (s_len > n)
